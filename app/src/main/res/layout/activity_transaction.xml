@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/display"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding= "20dp"
+        android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/amount_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/display_drawable"
+            android:hint="5000"
+            android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
+            android:textSize="25sp"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/display"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/withdraw"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorBlue"
+            android:text="Withdraw"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/display" />
+
+    <Button
+        android:id="@+id/deposit"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Deposit"
+        android:textSize="22dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlue"
+        app:layout_constraintEnd_toEndOf="@+id/withdraw"
+        app:layout_constraintStart_toStartOf="@+id/withdraw"
+        app:layout_constraintTop_toBottomOf="@+id/withdraw"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/transfer"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Transfer"
+        android:textSize="22dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlue"
+        app:layout_constraintEnd_toEndOf="@+id/deposit"
+        app:layout_constraintStart_toStartOf="@+id/deposit"
+        app:layout_constraintTop_toBottomOf="@+id/deposit"
+        android:layout_marginTop="20dp" />
+
+       <Button
+        android:id="@+id/check_balance"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Check Balance"
+        android:textSize="22dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlue"
+        app:layout_constraintEnd_toEndOf="@+id/transfer"
+        app:layout_constraintStart_toStartOf="@+id/transfer"
+        app:layout_constraintTop_toBottomOf="@+id/transfer"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/change_pin"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:text="Change Pin"
+        android:textSize="22dp"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlue"
+        app:layout_constraintEnd_toEndOf="@+id/check_balance"
+        app:layout_constraintStart_toStartOf="@+id/check_balance"
+        app:layout_constraintTop_toBottomOf="@+id/check_balance"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

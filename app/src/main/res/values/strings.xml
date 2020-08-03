@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Automated Taller Machine</string>
+    <string name="enobong_atm_machine">ENOBONG ATM MACHINE</string>
+    <string name="display">Display</string>
+    <string name="amount">Amount</string>
+    <string name="balance">Balance</string>
+    <string name="name_of_depositor">Name of Depositor !</string>
+    <string name="enter_amount">Enter Amount !</string>
+    <string name="click_ok_complete_transaction_now">Click ok complete transaction now !</string>
+</resources>
